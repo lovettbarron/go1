@@ -8,7 +8,7 @@ import (
 func Sqrt(x float64) float64 {
 	z := x
 	for i:=0;i<10;i++ {
-		z=z-( ((z*z)-x) / 2*z )
+		z=z-( ( ( z * z ) - x ) / (2 * z) )
 		fmt.Println("i:",i,"z:",z)
 	}
 	return z

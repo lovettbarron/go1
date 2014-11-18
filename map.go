@@ -21,4 +21,9 @@ func main() {
 	m["anotherPlace"] = Pin{ 4.01, -122.02 } // Comma as indicator of "Consider next line?"
 	fmt.Println(m["place"])
 	fmt.Println(m)
+	fmt.Println(t)
+	delete(t,"TheOne")
+	v := "TheThree"
+	t[v] = Pin{1231.2,-1515.2} // <-- Weird that this puts it on key 1?
+	fmt.Println(t)
 }
